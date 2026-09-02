@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[Seu Nome] — Portfólio</title>
+<meta name="description" content="Portfólio de [Seu Nome], estudante de Desenvolvimento de Sistemas.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================= -->
+<!-- BARRA LATERAL: ÍNDICE DE FOLHAS (nav principal) -->
+<!-- ============================================= -->
+<nav class="sheet-index" id="sheetIndex" aria-label="Navegação principal">
+  <div class="sheet-index__brand">
+    <span class="brand-mark">[SN]</span>
+  </div>
+  <ol class="sheet-index__list">
+    <li><a href="#topo" data-sheet="FL-00" class="active">Início</a></li>
+    <li><a href="#sobre" data-sheet="FL-01">Sobre</a></li>
+    <li><a href="#habilidades" data-sheet="FL-02">Habilidades</a></li>
+    <li><a href="#projetos" data-sheet="FL-03">Projetos</a></li>
+    <li><a href="#trajetoria" data-sheet="FL-04">Trajetória</a></li>
+    <li><a href="#contato" data-sheet="FL-05">Contato</a></li>
+  </ol>
+  <div class="sheet-index__scale">
+    <span>ESCALA</span>
+    <strong>1:1</strong>
+  </div>
+</nav>
+
+<button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+
+<main>
+
+  <!-- ============================================= -->
+  <!-- FL-00 — HERO / FOLHA DE ABERTURA -->
+  <!-- ============================================= -->
+  <section class="sheet hero" id="topo" data-sheet-number="FL-00">
+    <div class="grid-backdrop" aria-hidden="true"></div>
+    <div class="sheet-corner sheet-corner--tl" aria-hidden="true"></div>
+    <div class="sheet-corner sheet-corner--br" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <p class="eyebrow">PORTFÓLIO — REV. 01 / [ANO]</p>
+      <h1 class="hero__title">Sistema em<br>desenvolvimento.</h1>
+      <p class="hero__subtitle">
+        <strong><div Vicente="" de="" França=""></div></strong> — Estudante de Desenvolvimento de Sistemas.
+        Projetando, compilando e depurando ideias todos os dias.
+      </p>
+      <div class="hero__actions">
+        <a href="#projetos" class="btn btn--primary">Ver projetos</a>
+        <a href="#" class="btn btn--ghost">Baixar currículo ↓</a>
+      </div>
+    </div>
+
+    <div class="hero__schematic" aria-hidden="true">
+      <div class="schematic-frame">
+        <span class="schematic-frame__id">FIG. 01</span>
+        <div class="schematic-frame__viewport">
+          <span class="monogram">[SN]</span>
+          <div class="crosshair crosshair--h"></div>
+          <div class="crosshair crosshair--v"></div>
+        </div>
+      </div>
+
+      <div class="callout callout--01">
+        <span class="callout__line"></span>
+        <span class="callout__label">LINGUAGENS<br><b>[Java / Python / JS]</b></span>
+      </div>
+      <div class="callout callout--02">
+        <span class="callout__line"></span>
+        <span class="callout__label">STATUS<br><b>Compilando conhecimento_</b></span>
+      </div>
+      <div class="callout callout--03">
+        <span class="callout__line"></span>
+        <span class="callout__label">FORMAÇÃO<br><b>[Curso] — prev. [Ano]</b></span>
+      </div>
+      <div class="callout callout--04">
+        <span class="callout__line"></span>
+        <span class="callout__label">LOCAL<br><b>[Cidade, UF]</b></span>
+      </div>
+
+      <div class="coord-readout" id="coordReadout">X: 000 · Y: 000</div>
+    </div>
+
+    <a href="#sobre" class="scroll-cue" aria-label="Rolar para a próxima seção">
+      <span>ROLAR</span>
+      <span class="scroll-cue__line"></span>
+    </a>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- FL-01 — SOBRE (ficha técnica) -->
+  <!-- ============================================= -->
+  <section class="sheet sheet--paper" id="sobre" data-sheet-number="FL-01">
+    <div class="sheet-corner sheet-corner--tl" aria-hidden="true"></div>
+    <div class="sheet-corner sheet-corner--br" aria-hidden="true"></div>
+
+    <header class="sheet__header">
+      <span class="sheet__tag">FL-01</span>
+      <h2>Ficha técnica</h2>
+    </header>
+
+    
+
+      <div class="spec-sheet__rows">
+        <div class="spec-row">
+          <span class="spec-row__label">Nome</span>
+          <span class="spec-row__value">Vicente de França Mattos Neto </span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-row__label">Curso</span>
+          <span class="spec-row__value">Desenvolvimento de Sistemas</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-row__label">Instituição</span>
+          <span class="spec-row__value">Ilda Vieira Vilela/ Proz</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-row__label">Foco atual</span>
+          <span class="spec-row__value">Front-end, Inteligência Artificial e Banco de Dados</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-row__label">Objetivo</span>
+          <span class="spec-row__value">Evolução Profissional</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="bio-text">
+      Minha jornada na programação começou pela curiosidade em entender como os softwares funcionam por trás dos panos e pelo impacto direto que eles têm na rotina das pessoas. O que me motiva diariamente é a capacidade de criar, automatizar e otimizar processos através da lógica de programação. Busco minha primeira oportunidade no mercado de trabalho para colaborar com times de alta performance e acelerar meu desenvolvimento profissional.
+    </p>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- FL-02 — HABILIDADES (legenda) -->
+  <!-- ============================================= -->
+  <section class="sheet" id="habilidades" data-sheet-number="FL-02">
+    <div class="grid-backdrop grid-backdrop--faint" aria-hidden="true"></div>
+    <div class="sheet-corner sheet-corner--tl" aria-hidden="true"></div>
+    <div class="sheet-corner sheet-corner--br" aria-hidden="true"></div>
+
+    <header class="sheet__header">
+      <span class="sheet__tag">FL-02</span>
+      <h2>Legenda de habilidades</h2>
+    </header>
+
+    <div class="legend-grid">
+
+      <div class="legend-group">
+        <h3>Linguagens</h3>
+        <div class="gauge" data-level="80">
+          <div class="gauge__top"><span>[Java]</span><span class="gauge__pct">80%</span></div>
+          <div class="gauge__track"><div class="gauge__fill"></div></div>
+        </div>
+        <div class="gauge" data-level="65">
+          <div class="gauge__top"><span>[Python]</span><span class="gauge__pct">65%</span></div>
+          <div class="gauge__track"><div class="gauge__fill"></div></div>
+        </div>
+        <div class="gauge" data-level="70">
+          <div class="gauge__top"><span>[JavaScript]</span><span class="gauge__pct">70%</span></div>
+          <div class="gauge__track"><div class="gauge__fill"></div></div>
+        </div>
+      </div>
+
+      <div class="legend-group">
+        <h3>Front-end</h3>
+        <div class="gauge" data-level="85">
+          <div class="gauge__top"><span>HTML / CSS</span><span class="gauge__pct">85%</span></div>
+          <div class="gauge__track"><div class="gauge__fill"></div></div>
+        </div>
+        <div class="gauge" data-level="55">
+          <div class="gauge__top"><span>[React]</span><span class="gauge__pct">55%</span></div>
+          <div class="gauge__track"><div class="gauge__fill"></div></div>
+        </div>
+      </div>
+
+      <div class="legend-group">
+        <h3>Back-end &amp; dados</h3>
+        <div class="gauge" data-level="60">
+          <div class="gauge__top"><span>[Node.js]</span><span class="gauge__pct">60%</span></div>
+          <div class="gauge__track"><div class="gauge__fill"></div></div>
+        </div>
+        <div class="gauge" data-level="70">
+          <div class="gauge__top"><span>[SQL]</span><span class="gauge__pct">70%</span></div>
+          <div class="gauge__track"><div class="gauge__fill"></div></div>
+        </div>
+      </div>
+
+      <div class="legend-group">
+        <h3>Ferramentas</h3>
+        <div class="gauge" data-level="75">
+          <div class="gauge__top"><span>Git / GitHub</span><span class="gauge__pct">75%</span></div>
+          <div class="gauge__track"><div class="gauge__fill"></div></div>
+        </div>
+        <div class="gauge" data-level="50">
+          <div class="gauge__top"><span>[Figma]</span><span class="gauge__pct">50%</span></div>
+          <div class="gauge__track"><div class="gauge__fill"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- FL-03 — PROJETOS (folhas de desenho) -->
+  <!-- ============================================= -->
+  <section class="sheet sheet--paper" id="projetos" data-sheet-number="FL-03">
+    <div class="sheet-corner sheet-corner--tl" aria-hidden="true"></div>
+    <div class="sheet-corner sheet-corner--br" aria-hidden="true"></div>
+
+    <header class="sheet__header">
+      <span class="sheet__tag">FL-03</span>
+      <h2>Projetos</h2>
+    </header>
+
+    <div class="project-grid">
+
+      <article class="project-card">
+        <span class="project-card__id">FL-03.1</span>
+        <h3>EcoMed</h3>
+        <p>Plataforma que combina uma interface moderna com recursos de inteligência artificial.</p>
+        <div class="project-card__tags">
+          <span>[Tag]</span><span>[Tag]</span><span>[Tag]</span>
+        </div>
+        <div class="project-card__links">
+          <a href="#">Ver código →</a>
+          <a href="#">Ver demo →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <span class="project-card__id">FL-03.2</span>
+        <h3>Ilda Vieira</h3>
+        <p>Planejamento de uma infraestrutura de rede escolar com organização, segurança e escalabilidade.</p>
+        <div class="project-card__tags">
+          <span>[Tag]</span><span>[Tag]</span>
+        </div>
+        <div class="project-card__links">
+          <a href="#">Ver código →</a>
+          <a href="#">Ver demo →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <span class="project-card__id">FL-03.3</span>
+        <h3>NutriAi</h3>
+        <p>A plataforma é um serviço digital de nutrição personalizada que usa inteligência artificial e ciência para criar planos alimentares individuais, práticos e adaptados à rotina de cada pessoa.</p>
+        <div class="project-card__tags">
+          <span>[Tag]</span><span>[Tag]</span><span>[Tag]</span>
+        </div>
+        <div class="project-card__links">
+          <a href="#">Ver código →</a>
+        </div>
+      </article>
+
+      <article class="project-card project-card--ghost">
+        <span class="project-card__id">FL-03.4</span>
+        <h3>[Próximo projeto]</h3>
+        <p>Espaço reservado para o seu próximo commit.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- FL-04 — TRAJETÓRIA (histórico de revisões) -->
+  <!-- ============================================= -->
+  <section class="sheet" id="trajetoria" data-sheet-number="FL-04">
+    <div class="grid-backdrop grid-backdrop--faint" aria-hidden="true"></div>
+    <div class="sheet-corner sheet-corner--tl" aria-hidden="true"></div>
+    <div class="sheet-corner sheet-corner--br" aria-hidden="true"></div>
+
+    <header class="sheet__header">
+      <span class="sheet__tag">FL-04</span>
+      <h2>Histórico de revisões</h2>
+    </header>
+
+    <div class="revision-table" role="table">
+      <div class="revision-table__row revision-table__row--head" role="row">
+        <span role="columnheader">REV.</span>
+        <span role="columnheader">DATA</span>
+        <span role="columnheader">DESCRIÇÃO</span>
+      </div>
+      <div class="revision-table__row" role="row">
+        <span data-label="REV.">01</span>
+        <span data-label="DATA">2025</span>
+        <span data-label="DESCRIÇÃO">Início do curso de Desenvolvimento de Sistemas em Ilda Vieira/ Proz.</span>
+      </div>
+      <div class="revision-table__row" role="row">
+        <span data-label="REV.">02</span>
+        <span data-label="DATA">2025</span>
+        <span data-label="DESCRIÇÃO">Ilda Vieira Vilela, meu primeiro site no GitHub.</span>
+      </div>
+      <div class="revision-table__row" role="row">
+        <span data-label="REV.">03</span>
+        <span data-label="DATA">2026</span>
+        <span data-label="DESCRIÇÃO">Certificaçaõ de conclusão.</span>
+      </div>
+      
+      <div class="revision-table__row revision-table__row--pending" role="row">
+        <span data-label="REV.">05</span>
+        <span data-label="DATA">EM ABERTO</span>
+        <span data-label="DESCRIÇÃO">Próximo passo...</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- FL-05 — CONTATO (bloco de título) -->
+  <!-- ============================================= -->
+  <section class="sheet sheet--titleblock" id="contato" data-sheet-number="FL-05">
+    <div class="sheet-corner sheet-corner--tl" aria-hidden="true"></div>
+
+    <header class="sheet__header">
+      <span class="sheet__tag">FL-05</span>
+      <h2>Vamos conversar</h2>
+    </header>
+
+    <p class="titleblock-intro">
+      Aberto a estágios, projetos e oportunidades de aprender na prática.
+      Chama:
+    </p>
+
+    <div class="title-block">
+      <div class="title-block__row">
+        <span class="title-block__label">DESENHISTA</span>
+        <span class="title-block__value">Vicente de França</span>
+      </div>
+      <div class="title-block__row">
+        <span class="title-block__label">CONTATO</span>
+        <a class="title-block__value title-block__value--link" href="mailto:mattos_v11@icloud.com">mattos_v11@icloud.com</a>
+      </div>
+      <div class="title-block__row">
+        <span class="title-block__label">GITHUB</span>
+        <a class="title-block__value title-block__value--link" href="#" target="_blank" rel="noopener">https://github.com/mattos1011</a>
+      </div>
+      <div class="title-block__row">
+        <span class="title-block__label">LINKEDIN</span>
+        <a class="title-block__value title-block__value--link" href="#" target="_blank" rel="noopener">www.linkedin.com/in/vicente-de-frança</a>
+      </div>
+      <div class="title-block__row">
+        <span class="title-block__label">ESCALA</span>
+        <span class="title-block__value">1:1 — sem limite de ambição</span>
+      </div>
+      <div class="title-block__row">
+        <span class="title-block__label">DATA</span>
+        <span class="title-block__value" id="stampDate">--/--/----</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>Desenhado e construído por Vicente de França · <span id="footerYear">2026</span></p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
